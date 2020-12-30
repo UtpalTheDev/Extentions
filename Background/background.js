@@ -8,3 +8,5 @@ let msg={
 
 browser.tabs.sendMessage(tab.id, msg);
 }
+
+

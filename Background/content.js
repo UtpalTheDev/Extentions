@@ -1,6 +1,5 @@
 
 
-
 browser.runtime.onMessage.addListener(gotmsg);
 var value=0;
 function gotmsg(message,sender,sendResponse){
