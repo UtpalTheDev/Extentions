@@ -1,5 +1,5 @@
 //URLs to redirect
-var pattern = "*://securepubads.g.doubleclick.net/*";
+var pattern = ["*://cafemom.com/*","*://medium.com/*"];
 
 // cancel function returns an object
 // which contains a property `cancel` set to `true`
@@ -12,6 +12,6 @@ function cancel(requestDetails) {
 // passing the filter argument and "blocking"
 browser.webRequest.onBeforeRequest.addListener(
   cancel,
-  {urls: [pattern]},
+  {urls: pattern},
   ["blocking"]
 );
