@@ -22,7 +22,9 @@
     ],
 
     "background": {
-        "scripts":["background.js"]
+        "scripts":["data.js","background.js"],
+        "page": "background1.html"
+        
     },
     "browser_action":{
         "default_icon":"addblock2.png"
